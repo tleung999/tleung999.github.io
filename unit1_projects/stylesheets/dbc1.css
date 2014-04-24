@@ -1,0 +1,30 @@
+h4 {
+  color: green;
+}
+
+h2 {
+  color: #FF0000;
+}
+
+p strong {
+  color: #0000FF;
+}
+
+html {
+  background-color: gray;
+}
+
+li {
+  font-family: Verdana;
+}
+
+.yellow {
+  background-color: yellow;
+  color: blue;
+}
+
+#list1 {
+  font-size: 15pt;
+  font-family: Courier;
+}
+
