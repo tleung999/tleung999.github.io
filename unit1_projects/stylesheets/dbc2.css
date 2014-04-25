@@ -1,0 +1,61 @@
+/*Set link text to hex value*/
+a {
+	color: #003399;
+}
+
+/*remove underlines and text color change*/
+a:link {
+	text-decoration: none;
+}
+
+/*Mouse over color change*/
+a:hover {
+	background-color: orange;
+}
+
+/*remove the bullets and indentation in navigation bar*/
+#navbar {
+	list-style: none;
+	padding: 0;
+}
+
+/*Adjust style to 1st and last list element*/
+#sub-content ul li:first-child {
+	font-family: Verdant;
+	color: red;
+}
+
+#sub-content ul li:last-child {
+	font-family: Verdant;
+	color: purple;
+	font-size: 10;
+}
+
+
+/*Reposition divs leave header and footer alone*/
+#sidebar {
+	float: left;
+}
+
+#content {
+	float: left;
+}
+
+#sub-content {
+	float: right;
+}
+
+/*Position image absolutely over the top of the image (centered)*/
+#overtop {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	color: yellow;
+	font-family: Arial;
+	font-size: large;
+}
+
+/*Set the image div with caption to a relative position so its not static.  That way the caption can be set absolutely to this div*/
+#image {
+	position:relative;
+}
