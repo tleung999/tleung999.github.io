@@ -53,6 +53,10 @@ a:hover {
 	color: #CCCCCC;
 }
 
+em {
+	color:#E6E6E6;
+}
+
 .maincontent {
 	clear: both;
 	background-color: #535363;
@@ -75,7 +79,7 @@ a:hover {
 	border-radius: 5px;
 }
 
-li {
+.header li {
 	float: right;
 	list-style-type: none;
 	padding-left: 20px;
