@@ -65,6 +65,7 @@ em {
 	width: 740px;
 	padding: 30px;
 	border-radius: 5px;
+	margin-bottom: 5px;
 	/*Save box shadow in case I change my mind*/
 	/*box-shadow: 2px 5px #888888;*/
 }
