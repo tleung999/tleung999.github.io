@@ -1,0 +1,59 @@
+a:visited {
+  text-decoration: none;
+  color: #D1D1FF;
+}
+a:link {
+  text-decoration: none;
+  color: #D1D1FF;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #7E6C5A;
+  font-family: 'Poiret One', cursive;
+}
+
+header {
+  width: 100%;
+  margin-left: 1em;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  padding-right:1em;
+}
+
+section {
+  width: 100%;
+  padding: 1em;
+  background-color: #E0D6CC;
+
+}
+article {
+  margin-bottom: 1em;
+  height: 400px;
+  padding: 2em;
+  background-color: #B3ABA3;
+}
+
+h2 {
+  clear:both;
+}
+img {
+  padding-right:1em;
+  padding-bottom:1em;
+  float:left;
+}
+
+footer {
+  height: 300px;
+  text-align: center;
+}
