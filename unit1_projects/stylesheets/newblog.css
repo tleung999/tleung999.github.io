@@ -1,0 +1,273 @@
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	width: 100%;
+	background-color: #2A373F;
+	height: 140px;
+}
+
+
+
+#social {
+	font-size: xx-large;
+	margin-top: .1em;
+}
+@media screen and (max-width: 633px) {
+	
+	section {
+		width:80%;
+		float:left;
+		margin-right: 2em;
+	}
+
+	#logowrapper {
+		font-size: 2em;
+		color: #F2F3F4;
+		float: left;
+		background-color: #B7C1A6;
+		margin-top: 25px;
+		padding: .8em 0em .8em .8em;
+		width: 60%;
+		box-shadow: 5px 5px 1px #E7E1BD;
+		text-shadow: 0px 2px 3px #555;
+	}	
+	article {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		position: relative;
+		left: 2em;
+		width: 100%;
+		border-style: solid;
+		border-color: #B7C1A6;
+		border-width: .5em;
+		background-color: #F9F2D5;
+		line-height: 25px;
+		float:left;
+	}
+
+	.content {
+		float:left;
+		padding: 2em;
+		width: 80%;
+	}
+
+	aside {
+		background-color: #F9F2D5;
+		border-width: .5em;
+		border-style: solid;
+		border-color: #B7C1A6;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		line-height: 25px;
+		padding: 1em;
+		left: 2em;
+		position: relative;
+		width: 75%;
+		float:left;
+	}
+}
+@media screen and (min-width: 633px) {
+	section {
+		width:60%;
+		float:left;
+		margin-right: 2em;
+	}
+	#logowrapper {
+		font-size: 2em;
+		color: #F2F3F4;
+		float: left;
+		background-color: #B7C1A6;
+		margin-top: 25px;
+		padding: .8em 0em .8em .8em;
+		width: 40%;
+		box-shadow: 5px 5px 1px #E7E1BD;
+		text-shadow: 0px 2px 3px #555;
+	}	
+
+	article {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		position: relative;
+		left: 2em;
+		width: 100%;
+		border-style: solid;
+		border-color: #B7C1A6;
+		border-width: .5em;
+		line-height: 25px;
+		background-color: #F9F2D5;
+		float: left;
+	}
+	.content {
+		position:relative;
+		margin-left:4em;
+		padding: 2em;
+		width: 75%;
+	}
+	aside {
+		background-color: #F9F2D5;
+		border-width: .5em;
+		border-style: solid;
+		border-color: #B7C1A6;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 1em;
+		line-height: 25px;
+		left: 3em;
+		position: relative;
+		float:left;
+		width: 20%;
+	}
+}
+h3 {
+	font-size: x-large;
+	padding-bottom: 1em;
+}
+.content img {
+	float:left;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+@media screen and (max-width: 1363px) {
+	.date {
+		text-align: center;
+		padding: 1em;
+		font-size: x-large;
+		position: relative;
+		top: 25px;
+		right: 25px;
+		background-color: #64373C;
+		float:left;
+		color: #F2F3F4;
+	}
+}
+
+@media screen and (min-width: 1363px) {
+	.date {
+		text-align: center;
+		padding: 1em;
+		font-size: x-large;
+		position: relative;
+		top: 40px;
+		right: 25px;
+		background-color: #64373C;
+		float:left;
+		color: #F2F3F4;
+	}
+}
+
+@media screen and (min-width:1040px) {
+
+	.dark a:link {
+		text-decoration: none;
+		color: #F2F3F4;
+	}
+
+	.dark a:visited {
+		text-decoration: none;
+		color: #F2F3F4;
+	}
+	
+	.dark a:hover {
+		color: #E7E1BD;
+	}
+
+	.dark a:active {
+		text-decoration: none;
+		color: #F2F3F4;
+	}
+	
+	.light a:link {
+		text-decoration: none;
+		color: #2A373F;
+	}
+
+	.light a:visited {
+		text-decoration: none;
+		color: #2A373F;
+	}
+	
+	.light a:hover {
+		text-decoration: underline;
+		color: #2A373F;
+	}
+
+	.light a:active {
+		text-decoration: none;
+		color: #2A373F;
+	}
+}
+
+
+
+@media screen and (max-width:1040px) {
+
+	a:link {
+		text-decoration: none;
+		color: #000;
+	}
+
+	a:visited {
+		text-decoration: none;
+		color: #000;
+	}
+
+	a:hover {
+		color: #E7E1BD;
+	}
+
+	a:active {
+		text-decoration: none;
+		color: #000;
+	}
+
+
+	.light a:link {
+		text-decoration: none;
+		color: #2A373F;
+	}
+
+	.light a:visited {
+		text-decoration: none;
+		color: #2A373F;
+	}
+	
+	.light a:hover {
+		text-decoration: underline;
+		color: #2A373F;
+	}
+
+	.light a:active {
+		text-decoration: none;
+		color: #2A373F;
+	}
+}
+
+nav {
+	margin-top: 25px;
+	float: right;
+}
+ul {
+	margin-right: 5em;
+}
+li {
+	list-style-type: none;
+	padding-left: 2em;
+	padding-right: 2em;
+	display: inline;
+	font-size: large;
+}
+
+footer {
+	background-color: #2A373F;
+	height: 25px;
+	padding:2em;
+	text-align: center;
+	clear:both;
+	color:#F2F3F4;
+	font-size: large;
+	width: 100%;
+}

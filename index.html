@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link type="text/css" rel="stylesheet" href="unit1_projects/stylesheets/blog.css"/>
-	<title>Blog Template</title>
-</head>
-<body>
-	<div class="container">
-		<div class="header">
-			<div class="mewrapper">
-				<img class="me" src="http://www.gravatar.com/avatar/d85cc22952321d8907cca2f3da59ce6f.png"/>
+	<head>
+		<title>TLEUNG DBC TECHNICAL BLOG</title>
+		<link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/reset.css">
+		<link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/newblog.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body>
+	<div id="main">
+		<header>
+			<div id="logowrapper">
+					<p><i class="fa fa-keyboard-o"></i>
+					 DBC TECHNICAL BLOG</p>
 			</div>
-				<h2 class="sitetitle">My Dev Bootcamp Technical Blog</h2>
-				<ul class="sitedesc">
-					<li><a href="unit1_projects/contact.html">Contact</a></li>
-					<li><a href="unit1_projects/about.html">About</a></li>
-					<li><a href="unit1_projects/work.html">Work</a></li>
-					<li><a href="index.html">Home</a></li>
-				</ul>		
-		</div>
-		<img id="mainpic" src="unit1_projects/images/piratescovebg.jpg"/>
-		<div class="maincontent">
-			<h3><a href="unit1_projects/wireframe_sites.html">Wireframing my favorite 3 websites</a></h3>
-			<div class="sitedesc">
-				<p>April 25, 2014</p>
-				<p> Direct link to my wireframing project.  I used a locally installed application called <a href="http://www.justinmind.com/prototyper/download">Prototyper.</a></p>
-				<div>
-				</div>
-			</div>
-		</div>
-		<div class="maincontent">
-			<h3><a href="unit1_projects/week1_technical_blog.html">Analyzing my favorite sites in terms of user experience and design</a></h3>
-			<div class="sitedesc">
-				<p>April 26, 2014</p>
-				<p> I wanted to spend some time today to talk a little about my three favorite sites. Though I'm not 100% positive, I also think one of these sites might be your favorite too....</p>
-				<div>
-				</div>
-			</div>
-		</div>
-		<div class="maincontent">
-			<h3><a href="unit1_projects/week1_cultural_blog.html">Exploring Your Values</a></h3>
-			<div class="sitedesc">
-				<p>April 27, 2014</p>
-				<p>When you think of the times in your life where you've been the happiest, the proudest, or the most satisfied, which of the following values...</p>
-				<div>
-				</div>
-			</div>
-		</div>
-		<!-- Duplicate section below to add more content-->
-		<!--
-		<div class="maincontent">
-			<h3><a href="unit1_projects/week1_technical_blog.html">Analyzing my favorite sites in terms of user experience and design</a></h3>
-			<div class="sitedesc">
-				<p>April 26, 2014</p>
-				<div>
-				</div>
-			</div>
-		</div>
-		-->
-		<div class="footer">
-			<p>&copy; Tony Leung</p>
-		</div>
+			<nav class="dark">
+				<ul>
+					<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="unit1_projects/work.html"><i class="fa fa-desktop"></i> Work</a></li>
+					<li><a href="unit1_projects/about.html"><i class="fa fa-user"></i> About</a></li>
+					<li><a href="unit1_projects/contact.html"><i class="fa fa-comment-o"></i> Contact</a></li>
+				</ul>
+			</nav>
 
+		</header>
+		<section>
+			<article class="light">
+				<div class="date">
+					2<br>May
+				</div>
+				<div class="content">
+					<h3><a href="unit1_projects/my_wireframe.html">Wireframing my site</a></h3>
+					<img src="unit1_projects/images/blogsam.png"/ width="25%" height="25%">
+					<p>Since learning about Responsive Design and HTML5.  I decided to redesign my web site to conform to these standards. You can see how I updated my site from before to the new mock up.  
+					</p>
+				</div>
+			</article>
+			<article class="light">
+				<div class="date">
+					27<br>Apr
+				</div>
+				<div class="content">
+					<h3><a href="unit1_projects/week1_cultural_blog.html">Exploring Your Values</a></h3>
+					<img src="unit1_projects/images/values.jpg"/ width="25%" height="25%">
+					<p>When you think of the times in your life where you've been the happiest, the proudest, or the most satisfied, which of the following values...
+					</p>
+				</div>
+			</article>
+			<article class="light">
+				<div class="date">
+					26<br>Apr
+				</div>
+				<div class="content">
+					<h3><a href="unit1_projects/week1_technical_blog.html">Analyzing my favorite sites in terms of user experience and design</a></h3>
+					<img src="unit1_projects/images/skloog-Your-Favorite-Sites.png"/ width="25%" height="25%">
+					<p>I wanted to spend some time today to talk a little about my three favorite sites. Though I'm not 100% positive, I also think one of these sites might be your favorite too....
+					</p>
+				</div>
+			</article>
+			<article class="light">
+				<div class="date">
+					25<br>Apr
+				</div>
+				<div class="content">
+					<h3><a href="unit1_projects/wireframe_sites.html">Wireframing my favorite 3 websites</a></h3>
+					<img src="unit1_projects/images/blogsam.png"/ width="25%" height="25%">
+					<p>Direct link to my wireframing project.  I used a locally installed application called <a href="http://www.justinmind.com/prototyper/download">Prototyper.</a>
+					</p>
+				</div>
+			</article>
+		</section>
+		<aside>
+			<img src="unit1_projects/images/P1013651.jpg" width="100%"/>
+			<caption>Picture of the week
+			</caption>
+			<p><br>This picture was taken when I was in the Carribean at Barbados.   A catamaran was out feeding the turtles and I had my underwater camera with me.   It was amazing seeing them swim, one even swam at me head on and bumped me in the chest.</p>
+		</aside>
 	</div>
-</body>
+		<footer class="dark">
+
+			<p>&copy; Tony Leung</p>
+			<div id="social">
+				<a href="https://github.com/tleung999"><i class="fa fa-github-square"></i></a>
+				<a href="https://twitter.com/tleung75"><i class="fa fa-twitter-square"></i></a>
+				<a href="https://www.facebook.com/tony.leung.16940"><i class="fa fa-facebook-square"></i></a>
+				<a href="https://www.linkedin.com/profile/view?id=225539140&authType=name&authToken=2VdK&locale=en_US&pvs=pp&trk=ppro_viewmore"><i class="fa fa-linkedin-square"></i></a>
+				<a href="http://google.com/+TonyLeung999"><i class="fa fa-google-plus-square"></i></a>
+			</div>
+		</footer>
+	</body>
 </html>
