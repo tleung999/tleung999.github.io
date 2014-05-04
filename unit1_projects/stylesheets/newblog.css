@@ -125,7 +125,7 @@ h3 {
 	font-size: x-large;
 	padding-bottom: 1em;
 }
-.content img {
+.imgwrap {
 	float:left;
 	padding-right: 1em;
 	padding-bottom: 1em;
@@ -246,21 +246,29 @@ h3 {
 	}
 }
 
+.css {
+	clear:both;
+	background-color: #B7C1A6;
+}
+
 nav {
 	margin-top: 25px;
 	float: right;
 }
-ul {
+header ul {
 	margin-right: 5em;
 }
-li {
+header li {
 	list-style-type: none;
 	padding-left: 2em;
 	padding-right: 2em;
 	display: inline;
 	font-size: large;
 }
-
+section ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
 footer {
 	background-color: #2A373F;
 	height: 25px;
