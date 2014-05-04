@@ -41,7 +41,7 @@
 						<li><p>Fixed - This type of positioning will lock your element in place on a spot on the screen.   Even if you scroll, the position will stay fixed and not flow with the document.  I personally think of this position as the "I dont care" positioning since using fixed will place it where you want but also stay on top of other elements blocking them from view. You have to be careful using this.</p><br>
 					</ol>
 						<h3>Lets try some examples:</h3>
-						<p>Start with the HTML code</p>
+						<p>Start with the base HTML & CSS code</p>
 						<p><img src="images/htmlposbase.png"/></p>
 						<p>What it looks like on the browser</p>
 						<p><img src="images/htmlposbasebr.png"/></p>
@@ -57,7 +57,7 @@
 						<p>Lets move the red box to right by 100px of the blue box. Add <span class="css">position: absolute; & left:100px;</span> to #redbox to move it over to the right 100px.</p>
 						<p>Code Changes</p>
 						<p><img src="images/htmlposabserr.png"/></p>
-						<p>Hey wait a sec!  Why did it not move to the right by 100px so it sits next to the blue box?</p>
+						<p>Hey wait a sec!  Why did it not move to the right by 100px so it sits next to the blue box?. By not declaring blue box as a relative or absolute position, the red box is moving right from the edge of page not from the blue box.  </p>
 						<p><img src="images/htmlposabserrbr.png"/></p>
 						<p>We need to make sure that the parent element is either absolute or relative positioned. Add <span class="css">position: relative;</span> to #bluebox.</p>
 						<p>Code Changes</p>
