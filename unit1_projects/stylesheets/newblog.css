@@ -9,7 +9,9 @@ header {
 	height: 140px;
 }
 
-
+.blue {
+	color: #2A373F;
+}
 
 #social {
 	font-size: xx-large;
