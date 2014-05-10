@@ -24,7 +24,7 @@ header {
 
 #eventwrapper {
 	margin-left: 5em;
-	width: 70%;
+	width: 50%;
 	float: left;
 
 }
@@ -67,7 +67,10 @@ header {
 	float: left;
 	
 }
-
+#pstat {
+	float: left;
+	width: 20%;
+}
 a:hover {
 	background-color: #663300;
 	color: red;

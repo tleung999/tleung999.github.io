@@ -63,14 +63,6 @@
 				<div id="eventimg"><img id="eimg" width="300px" height="300px"></div>
 				<div id="eventdesc"><p id="edesc"></p></div>
 			</div>
-			<div id="pstat">
-				<ul>Player Stats
-					<li>Name: <span id="name"> </span></li>
-					<li>Health: <span id="health"> </span></li>
-					<li>Bottles of Jameson: <span id="bottles"> </span></li>
-				</ul>
-
-			</div>
 			<div id="userpanel">
 				<div id="leftb">
 					<p>Use the left and right arrows to move your character</p>
@@ -85,21 +77,6 @@
 
 	</body>
 	<script type="text/javascript">
-			var pname = prompt("Welcome to Jameson Quest! Enter your name");
-			function Player() {
-				 this.stats = { Name: "name", Health: 100, Bottles: 5}
-				 this.insert = function () {
-				 								document.getElementById('name').innerHTML = this.stats.Name;
-				 								document.getElementById('health').innerHTML = this.stats.Health;
-				 								document.getElementById('bottles').innerHTML = this.stats.Bottles;
-				 								
-				 }
-			}
-
-			var newPlayer = new Player();
-			newPlayer.stats.Name = pname;
-			newPlayer.insert();
-
 			function manleft() {
 				var currentloc = 0;
  				for (var x=1; x < 11; x++) {
@@ -155,33 +132,15 @@
 						buttonon();
 					}
 					if (choice === 'b') {
-						console.log(newPlayer.stats.Health);
-						if (newPlayer.stats.Health > 0) {
-							document.getElementById('edesc').innerHTML="The cop had too many donuts, you got away but got a little scraped up";
-							newPlayer.stats.Health = newPlayer.stats.Health - 50;
-							document.getElementById('health').innerHTML=newPlayer.stats.Health;
-							buttonon();
-						}
-						else {
-							document.getElementById('edesc').innerHTML="You try to make a run for it, but you are too weak.  He calls in for backup and hauls you to jail";
-							reset();
-						} 
+						document.getElementById('edesc').innerHTML="You try to make a run for it.  He calls in for backup and hauls you to jail";
+						reset();
 					}
 			}
 
 			function drunk(choice) {
 					if (choice === 'a') {
-						if (newPlayer.stats.Bottles > 0) {
-							document.getElementById('edesc').innerHTML="You give him a bottle, you now have one less bottle for the party";
-							newPlayer.stats.Bottles = newPlayer.stats.Bottles - 1;
-							document.getElementById('bottles').innerHTML=newPlayer.stats.Bottles;
-							buttonon();
-						}
-						else {
-							document.getElementById('edesc').innerHTML="You give him a bottle, but you dont have anymore. You walk home with nothing, the party is over.";
-							reset();
-						}	
-						
+						document.getElementById('edesc').innerHTML="You give him a bottle, but he decides to take the whole case!  You walk home with nothing....";
+						reset();
 					}
 					if (choice === 'b') {
 						document.getElementById('edesc').innerHTML="You try to make a run for it.  He's too drunk to catch up";
@@ -195,16 +154,8 @@
 						buttonon();
 					}
 					if (choice === 'b') {
-						if (newPlayer.stats.Health > 0) {
-							document.getElementById('edesc').innerHTML="You try to make a run for it.  He bites you.  OUCH!";
-							newPlayer.stats.Health = newPlayer.stats.Health - 50;
-							document.getElementById('health').innerHTML=newPlayer.stats.Health;
-							buttonon();
-						}
-						else {
-							document.getElementById('edesc').innerHTML="You try to make a run for it.  You can't out run the dog and drop all your alcohol...*CRY*";
-							reset();
-						}
+						document.getElementById('edesc').innerHTML="You try to make a run for it.  You can out run the dog and drop all your alcohol...*CRY*";
+						reset();
 					}
 			}
 
@@ -214,16 +165,8 @@
 						reset();
 					}
 					if (choice === 'b') {
-						if (newPlayer.stats.Health > 0) {
-							document.getElementById('edesc').innerHTML="You give the kid the cold shoulder and he throws a rock at you.   OUCH!";
-							newPlayer.stats.Health = newPlayer.stats.Health - 10;
-							document.getElementById('health').innerHTML=newPlayer.stats.Health;
-							buttonon();
-						}
-						else {
-							document.getElementById('edesc').innerHTML="You decline to buy him anything, he trips you and you fall on your head.   You wind up in the hospital.";
-							reset();	
-						}
+						document.getElementById('edesc').innerHTML="You give the kid the cold shoulder and continue walking home";
+						buttonon();
 					}
 			}
 
