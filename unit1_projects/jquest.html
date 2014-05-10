@@ -24,31 +24,31 @@
 						<img src="images/man.jpg" id="1" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img  id="2" width="100%" height="100%"/>
+						<img src="images/white.png" id="2" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="3" width="100%" height="100%"/>
+						<img src="images/white.png" id="3" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="4" width="100%" height="100%"/>
+						<img src="images/white.png" id="4" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="5" width="100%" height="100%"/>
+						<img src="images/white.png" id="5" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="6" width="100%" height="100%"/>
+						<img src="images/white.png" id="6" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="7" width="100%" height="100%"/>
+						<img src="images/white.png" id="7" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="8" width="100%" height="100%"/>
+						<img src="images/white.png" id="8" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="9" width="100%" height="100%"/>
+						<img src="images/white.png" id="9" width="100%" height="100%"/>
 					</td>
 					<td>
-						<img id="10" width="100%" height="100%"/>
+						<img src="images/white.png" id="10" width="100%" height="100%"/>
 					</td>
 					<td>
 						<img src="images/house.png" width="100%" height="100%"/>
@@ -103,13 +103,14 @@
 			function manleft() {
 				var currentloc = 0;
  				for (var x=1; x < 11; x++) {
+
  					if (document.getElementById(x).src.indexOf("man.jpg") != -1) {
  						currentloc = x;
  					}				
  				}
  				if (currentloc > 1) {
  					document.getElementById(currentloc-1).src = "images/man.jpg";
- 					document.getElementById(currentloc).src = "";
+ 					document.getElementById(currentloc).src = "images/white.png" ;
  					randomEvent();
 				}
 				else {
@@ -126,9 +127,8 @@
  					}				
  				}
  				if (currentloc < 10) {
- 					//document.getElementById(currentloc+1).src = document.getElementById(currentloc).src;
  					document.getElementById(currentloc+1).src = "images/man.jpg";
- 					document.getElementById(currentloc).src = "";
+ 					document.getElementById(currentloc).src = "images/white.png" ;
  					randomEvent();
 				}
 				else {
