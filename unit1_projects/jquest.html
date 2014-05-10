@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/jquest.css">
+		<title>Jameson Quest</title>
+		<meta http-equiv="content-type" content="image/jpeg; charset=UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Jameson Quest</h1>
+		</header>
+		<section id="story">
+			<p>You are on a quest to bring bottles of Jameson whiskey back to your house from
+				the liquor store for a party you're having.    Along the way you run into drunks who want to take your booze, dogs that will try to maul you,  and kids who ask you to help them buy alcohol.   Also police officers might be patrolling the neighborhood, so don't get caught without your id!</p>
+		</section>
+
+		<section>
+			<table align="center">
+				<tr>
+					<td>
+						<img src="images/store.jpg" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img src="images/man.jpg" id="1" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img  id="2" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="3" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="4" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="5" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="6" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="7" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="8" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="9" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img id="10" width="100%" height="100%"/>
+					</td>
+					<td>
+						<img src="images/house.png" width="100%" height="100%"/>
+					</td>
+
+
+				</tr>
+			</table>
+		</section>
+		<section>
+			<div id="eventwrapper">
+				<div id="eventimg"><img id="eimg" width="300px" height="300px"></div>
+				<div id="eventdesc"><p id="edesc"></p></div>
+			</div>
+			<div id="userpanel">
+				<div id="leftb">
+					<p>Use the left and right arrows to move your character</p>
+					<img id="lpic" src="images/left.jpeg" width="100px" height="100px" onclick="manleft()">
+				</div>
+				<div id="rightb">
+					<img id="rpic" src="images/right.png" width="100px" height="100px" onclick="manright()">
+				</div>
+			</div>
+		</section>
+
+
+	</body>
+	<script type="text/javascript">
+			function manleft() {
+				var currentloc = 0;
+ 				for (var x=1; x < 11; x++) {
+ 					if (document.getElementById(x).src.indexOf("man.jpg") != -1) {
+ 						currentloc = x;
+ 					}				
+ 				}
+ 				if (currentloc > 1) {
+ 					document.getElementById(currentloc-1).src = "images/man.jpg";
+ 					document.getElementById(currentloc).src = "";
+ 					randomEvent();
+				}
+				else {
+					alert("What are you doing back at the liquor store?");
+					reset();
+				}
+			}				
+
+			function manright() {
+				var currentloc = 0;
+ 				for (var x=1; x < 11; x++) {
+ 					if (document.getElementById(x).src.indexOf("man.jpg") != -1) {
+ 						currentloc = x;
+ 					}				
+ 				}
+ 				if (currentloc < 10) {
+ 					//document.getElementById(currentloc+1).src = document.getElementById(currentloc).src;
+ 					document.getElementById(currentloc+1).src = "images/man.jpg";
+ 					document.getElementById(currentloc).src = "";
+ 					randomEvent();
+				}
+				else {
+					document.getElementById('eimg').src = "images/jameson.jpg";
+					document.getElementById('edesc').innerHTML="YAY!! We got home safe with all the alcohol!  Party Time!.....wait a sec, did we forget the ice?";
+					setTimeout(function(){reset()},1000);
+				
+				}
+			}				
+
+			function buttonoff() {
+				document.getElementById('lpic').style.visibility = "hidden";
+				document.getElementById('rpic').style.visibility = "hidden";
+			}
+
+			function buttonon() {
+				document.getElementById('lpic').style.visibility = "visible";
+				document.getElementById('rpic').style.visibility = "visible";
+			}
+
+			function police(choice) {
+					if (choice === 'a') {
+						document.getElementById('edesc').innerHTML="You show him your ID and he lets you go.";
+						buttonon();
+					}
+					if (choice === 'b') {
+						document.getElementById('edesc').innerHTML="You try to make a run for it.  He calls in for backup and hauls you to jail";
+						reset();
+					}
+			}
+
+			function drunk(choice) {
+					if (choice === 'a') {
+						document.getElementById('edesc').innerHTML="You give him a bottle, but he decides to take the whole case!  You walk home with nothing....";
+						reset();
+					}
+					if (choice === 'b') {
+						document.getElementById('edesc').innerHTML="You try to make a run for it.  He's too drunk to catch up";
+						buttonon();
+					}
+			}
+
+			function dog(choice) {
+					if (choice === 'a') {
+						document.getElementById('edesc').innerHTML="You take out your pepper spray, aim it at the dog, and pull the trigger.  The dog runs off howling..";
+						buttonon();
+					}
+					if (choice === 'b') {
+						document.getElementById('edesc').innerHTML="You try to make a run for it.  You can out run the dog and drop all your alcohol...*CRY*";
+						reset();
+					}
+			}
+
+			function boy(choice) {
+					if (choice === 'a') {
+						document.getElementById('edesc').innerHTML="You sell the boy a bottle of Jameson, turns out the boy was part of an undercover sting.  The police comes and takes you to jail.";
+						reset();
+					}
+					if (choice === 'b') {
+						document.getElementById('edesc').innerHTML="You give the kid the cold shoulder and continue walking home";
+						buttonon();
+					}
+			}
+
+			function randomEvent() {
+					var e = Math.floor((Math.random() * 8) + 1);
+					if (e === 1) {
+						buttonoff();
+						document.getElementById('eimg').src = "images/policeman.gif";
+						document.getElementById('edesc').innerHTML="<p>A policeman calls out, \"Are you old enough to drink young man? Let me see your ID!\"</p><p>What do you want to do?<br><a href=\"#\" onclick=\"police('a')\">Show him your ID</a>   <a href=\"#\" onclick=\"police('b')\">Make a run for it!</a></p>";
+					}
+					else if (e === 2) {
+						buttonoff();
+						document.getElementById('eimg').src = "images/drunkman.gif";
+						document.getElementById('edesc').innerHTML="<p>A drunk trucker walks up to you. \"Give me one of those bottles of Jameson buddy!\"</p><p>What do you want to do?<br><a href=\"#\" onclick=\"drunk('a')\">Give him the bottle</a>   <a href=\"#\" onclick=\"drunk('b')\">Make a run for it!</a></p>";	
+					}
+					else if (e === 3) {
+						buttonoff();
+						document.getElementById('eimg').src = "images/angrydog.jpg";
+						document.getElementById('edesc').innerHTML="<p>An angry dog growls at you.</p><p>What do you want to do?<br><a href=\"#\" onclick=\"dog('a')\">Spray it with pepper spray.</a>   <a href=\"#\" onclick=\"dog('b')\">Make a run for it!</a></p>";	
+					}
+					else if (e === 4) {
+						buttonoff();
+						document.getElementById('eimg').src = "images/teen.jpg";
+						document.getElementById('edesc').innerHTML="<p>A young teenage kid walks up to you. \"Say mister! Mind if I buy one of those bottles off you?\"</p><p>What do you want to do?<br><a href=\"#\" onclick=\"boy('a')\">Sell the boy a bottle</a>   <a href=\"#\" onclick=\"boy('b')\">Decline his offer and continue walking home</a></p>";		
+					}
+					else if (e > 5) {
+						document.getElementById('eimg').src = "images/sweat.jpg";
+						document.getElementById('edesc').innerHTML="<p>Lucky you! You didnt run into problems on this block. Continue heading home.</p>";
+					}
+			}	
+			
+			function reset() {
+				var answer = confirm("Do you want to play again?");
+				if (answer) {
+					location.reload();
+				}
+			}
+
+
+
+	</script>
+
+</html>
