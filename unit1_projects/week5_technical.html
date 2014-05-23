@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My Work</title>
+		<title>Week 5 Technical Blog - Classes</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/newblog.css">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -27,24 +27,45 @@
 		<section>
 			<article class="light">
 				<div class="date">
-					2<br>May
+					22<br>May
 				</div>
 				<div class="content">
-					<h3>Nothing here yet.....Check back later</h3>
-					<img class="imgwrap" src="images/blog4.jpg" width="25%" height="25%"/>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<h3>Week 5 Technical Blog - Classes</h3>
+					<img class="imgwrap" src="images/rubyclass.png" width="25%" height="25%"/>
+					<p>When thinking about object oriented programming, everything in Ruby is an object.  Strings, integers, boolean values, and even classes are considered objects in Ruby.   But why are classes so important to object oriented programming?<br>   Basic OO programming rely on the following concepts.
 					</p>
+					<ul>
+						<li>Abstraction - Modeling classes appropriate to the problem.</li>
+						<li>Polymorphism - Using operator or function in different ways for different data input.</li>
+						<li>Encapsulation - Hides the details of a class from other objects.</li>
+						<li>Inheritance - Form new classes using classes that have already been defined.</li>
+					</ul><br>
+					<p>An object oriented program involves classes and objects.   Classes is a blueprint or prototype from which objects are created.  These objects are often used to model real world objects that you find in everyday life. </p><br>
+					<p>
+					 Lets try an example.   Say we wanted to create an object called Car class.   What would we want to know about the car?   Color? Type? Miles per gallon?  Price?  
+					</p>
+					<p> You start building a class using the following syntax</p>
+					<img src="images/carclass.png"/>
+					<p> When Ruby creates a new object, it looks for the method initialize to setup default values. You can also pass in arguments to the method to use within the class.  Create the initialize method.  Pass in the different properties of the car and create instance variables that will store the properties.  I will talk about what instance variables are once we have things setup properly.</p>
+					<img src="images/carclassinit.png"/><br>
+					<p>Next lets create another method which allows you to see the stored instance variables.</p>
+					<img src="images/carclassspecs.png"/><br>
+					<p>Before we continue, what are instance variables?  Instance variables are variables that are bound to the instance of the class.  Every instance of a class has a different set of instance variables. These variables will exist as long as the instance is live.   Take our next few lines of code.   We created two new instances of Car.   Each instance will have its own stored properties and won't intermingle with each other. </p>
+					<img src="images/carclass2instance.png"/><br>
+					<p>Here's what the results will look like</p>
+					<img src="images/carclass2instancer.png"/><br>
+					<p>So why use instance variables?  If you want to protect your data from other instances or objects, use an instance variable to lock everything within the instance.   Also all instance variables are available to all methods inside the class.   Its unnecessary to pass in the instance variable to a method that is defined inside the class.</p><br>
+					<p>Back to our Car class...now that you understand how to create a new class, create instance variables and how they are used, lets create some additional functionality with our class.</p><br>
+					<p>What other functions would a car have? Brakes? on/off switch? Apply gas?  Lets create it.</p>
+					<img src="images/carclassfull.png"/>
+					<p>Here's the results</p>
+					<img src="images/carclassfullr.png"/><br>
+					<p>As you can see, building a class allows you to organize your code to mimic real world objects.   It could be a car, a phone, or something that can automatically access a database and allow you to read, write, and delete records.   As long as you know how to create a new instance of the class, what methods it contain, and how to call them. You really dont need to know exactly how the code works (unless something is broken in the code).  This helps frees you from having to manage the functionality of that part of the program.</p><br>
+					<p>
+						Resources<br>
+						<a href="http://zetcode.com/lang/rubytutorial/oop/">Zetcode.com - Object Oriented Programming in Ruby</a><br>
+						<a href="http://www.tutorialspoint.com/ruby/ruby_classes.htm">Tutorialspoint.com - Ruby Classes and Object</a><br>
+						<a href="http://ruby.about.com/od/variables/a/Instance-Variables.htm">About.com - Ruby Instance Variables</a><br>
 				</div>
 			</article>
 		</section>
