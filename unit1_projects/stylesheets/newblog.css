@@ -7,8 +7,15 @@ header {
 	width: 100%;
 	background-color: #2A373F;
 	height: 140px;
+	top: 0;
+	position: fixed;
+	z-index: 1;
 }
 
+#contentwrap {
+	margin-top: 150px;
+	overflow: auto;
+}
 .blue {
 	color: #2A373F;
 }
