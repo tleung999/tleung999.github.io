@@ -20,6 +20,10 @@ header {
 	color: #2A373F;
 }
 
+.code {
+	color: #F5F5F5;
+	font-size: medium;
+}
 #social {
 	font-size: xx-large;
 	margin-top: .1em;
