@@ -1,0 +1,92 @@
+---
+layout: default-bloglist
+---
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Blog Listing
+                    <small>Click on one of my blogs below to read</small>
+                </h1>
+            </div>
+
+        </div>
+        {% for post in paginator.posts %}
+        <div class="row">
+
+            <div class="col-lg-7 col-md-7">
+                <a href="{{ post.url }}">
+                    <img class="img-responsive" src="{{ post.image }}">
+                </a>
+            </div>
+
+            <div class="col-lg-5 col-md-5">
+                <h3>{{ post.title }}</h3>
+                <p>
+                  <span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%b %-d, %Y" }}
+                </p>
+                <p>{{ post.snippet }}</p>
+                <a class="btn btn-primary" href="{{ post.url }}">View Blog <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+        </div>
+        <hr>
+        {% endfor %}
+        
+        <div class="row text-center">
+
+            <div class="col-lg-12">
+                <!-- Pagination links -->
+                <div>
+                  <ul class="pagination">
+                    {% if paginator.previous_page %}
+                      {% if paginator.previous_page == 1 %}
+                        <li>
+                          <a href="/bloglist/">&laquo;</a>
+                        </li>
+                      {% else %}
+                        <li>
+                          <a href="/bloglist/page{{paginator.previous_page}}">&laquo;</a>
+                        </li>
+                      {% endif %}
+                    {% else %}
+                      <li class="disabled">
+                        <a href="">&laquo;</a>
+                      </li>
+                    {% endif %}
+                    {% if paginator.page == 1 %}
+                      <li class="active">
+                        <a href="#">1</a>
+                      </li>
+                    {% else %}
+                      <li>
+                        <a href="/bloglist/">1</a>
+                      </li>
+                    {% endif %}
+                    {% for count in (2..paginator.total_pages) %}
+                      {% if count == paginator.page %}
+                        <li class="active">
+                          <a href="#">{{count}}</a>
+                        </li>
+                      {% else %}
+                        <li>
+                          <a href="/bloglist/page{{count}}">{{count}}</a>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                    {% if paginator.next_page %}
+                      <li>
+                        <a href="/bloglist/page{{paginator.next_page}}">&raquo;</a>
+                      </li>
+                    {% else %}
+                      <li class="disabled">
+                        <a href="#">&raquo;</a>
+                      </li>
+                    {% endif %}
+                  </ul>
+                </div>
+            </div>
+        <hr>
+    </div>
+    <!-- /.container -->

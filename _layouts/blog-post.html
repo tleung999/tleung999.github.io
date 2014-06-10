@@ -1,0 +1,17 @@
+---
+layout: default-blog
+---
+<!-- the actual blog post: title/author/date/content -->
+<h1>{{ page.title }}</h1>
+<p class="lead">by <a href="index.html">{{ page.name }}</a>
+</p>
+<hr>
+<p>
+    <span class="glyphicon glyphicon-time"></span> Posted on {{ page.date | date: "%b %-d, %Y" }}</p>
+<hr>
+<img src="{{ page.image | prepend: site.baseurl }}" class="img-responsive">
+<hr>
+<p class="lead">
+    {{content}}
+</p>
+<hr>

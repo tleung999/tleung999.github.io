@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/*Set span colors*/
+		.green {
+			color: #00FF00;
+		}
+		
+		.orange {
+			color: orange;
+		}
+		
+		/*centers all the content within 1200px width*/
+		#container {
+			margin: 0 auto;
+			width: 1200px;
+		}
+
+		/*Give the header box some color*/
+		#header {
+			background-color:gray;
+			padding: 10px
+			
+		}
+
+		/*Set sidebar box size*/
+		#sidebar {
+			margin:10px;
+			padding:5px;
+			border:1px solid black;
+			border-radius: 10px;
+			width: 124px;
+		}
+
+		/*Set content box size*/
+		#content {
+			width: 700px;
+			margin:10px;
+			padding:5px;
+			border:1px solid black;
+			border-radius: 10px;
+		}
+
+		/*set the position of sub-content to relative and move it over to the left by 50px by using margin-right*/
+		#sub-content {
+			position: relative;
+			margin-right: 50px;
+			margin-top: 10px;
+			width: 200px;
+			padding: 5px;
+			border:1px solid black;
+			border-radius: 10px;
+		}
+
+		/*clear the footer area of any floats and give box some color*/
+		#footer {
+			clear: left;
+			background-color: gray;
+			padding: 10px;
+		}
+	</style>
+
+	<link type="text/css" rel="stylesheet" href="css/dbc2.css" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<title>HTML CSS Solo Challenge</title>
+</head>
+<body>
+	<div id="container">
+		<div id="header"><h1>DBC Unit1 Solo Challenge</h1></div>
+		<div id="sidebar">
+			<p>Sidebar Navigation</p>
+			<ul id="navbar">
+				<li><i class="fa fa-cloud"></i><a href="http://www.pcworld.com">PCWorld</a></li>
+				<li><i class="fa fa-cloud"></i><a href="http://www.devbootcamp.com">Dev Bootcamp</a></li>
+				<li><i class="fa fa-cloud"></i><a href="http://www.macworld.com">Macworld</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<p>This is the <span class="green">main</span> content</p>
+			<p><i class="fa fa-spinner fa-spin"></i></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.content</p>
+			<div id="image"><img src="img/1000w.jpeg" alt="Triumph Thruxton 900" width="75%" height="75%"/>
+				<figcaption id="overtop">Triumph Thruxton 900</figcaption>
+			</div>
+		</div>
+		<div id="sub-content" >
+			<p>This is the <span class="orange">sub-content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </span>
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<ul>
+				<li>This is list 1</li>
+				<li>This is list 2</li>
+				<li>This is list 3</li>
+				<li>This is list 4</li>
+		</div>
+		<div id="footer">Footer here</div>
+	</div>
+</body>
+</html>

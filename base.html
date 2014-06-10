@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TONY LEUNG | DBC</title>
+    <title>TONY LEUNG | DBC - MY WORK</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom Theme CSS -->
-    <link href="./css/grayscale.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
 </head>
 
@@ -43,10 +43,14 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="./bloglist/"><i class="fa fa-road"></i>BLOGS</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">BLOGS <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Cultural Blogs</a></li>
+                              <li><a href="#">Technical Blogs</a></li>
+                            </ul>
                     </li>
                     <li class="page-scroll">
-                        <a href="./work/index.html"><i class="fa fa-desktop"></i>Work</a>
+                        <a href="#download"><i class="fa fa-desktop"></i>Work</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about"><i class="fa fa-user"></i>About</a>
@@ -71,7 +75,7 @@
                         <p class="intro-text">Coding / Photography / Fun </p>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-down animated"></i>
+                                <i class="fa fa-angle-double-down animated"></i>
                             </a>
                         </div>
                     </div>
@@ -90,11 +94,22 @@
         </div>
     </section>
 
-    <section id="contact" class="content-section text-center">
-        <div class="contact-section">
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Contact Me</h2>
+                    <h2>My Projects</h2>
+                    <p>Come check out my projects and see some of my work.</p>
+                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Me</h2>
                 <p>tleung999@yahoo.com</p>
                 <ul class="list-inline banner-social-buttons">
                     <li><a href="https://www.linkedin.com/profile/view?id=225539140&authType=name&authToken=2VdK&locale=en_US&pvs=pp&trk=ppro_viewmore" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square"></i> <span class="network-name">LinkedIn</span></a>
@@ -106,11 +121,11 @@
                     <li><a href="https://plus.google.com/+TonyLeung999/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
                 </ul>
-                </div>
             </div>
         </div>
-        <div id="filler"></div>
     </section>
+
+    <div id="map"></div>
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -118,7 +133,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="./js/grayscale.js"></script>
+    <script src="js/grayscale.js"></script>
 
 </body>
 
