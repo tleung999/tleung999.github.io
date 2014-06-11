@@ -16,7 +16,7 @@ The explanation to inheritance is pretty straight forward.   Any class that you 
 
 When working with inheritance, the parent and child class can interact with each other in three ways.
 
-Actions on the child imply an action on the parent.
+1.Actions on the child imply an action on the parent.
 
 If we have the following example.
 {% highlight ruby linenos %}
@@ -42,7 +42,7 @@ The child class Car will inherit the methods of the parent class and you'll see 
 
 * * *
 
-Actions on the child override the action on the parent.
+2.Actions on the child override the action on the parent.
 
 If we have the following example.
 {% highlight ruby linenos %}
@@ -71,7 +71,7 @@ The child class Car and the Vehicle class both have the same method name.  Even 
 
 * * *
 
-Actions on the child alter the action on the parent.
+3.Actions on the child alter the action on the parent.
 
 An additional sidenote on inheritance.   If you try to call super(), and there is no overridden parent method, then you will get an error such as the following
 
