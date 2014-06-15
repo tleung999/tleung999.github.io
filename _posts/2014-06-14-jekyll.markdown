@@ -62,22 +62,7 @@ This is the configuration file.  You use this file to add customizations, such a
 This directory is used to place any type of HTML code you think all your pages will need.  When I say HTML code, these files can be the header, footer, head, comment.   So if your pages are going to have the same navigational bars, build a HTML file that contains the header tags, nav tags, and maybe an ordered list of navigation links.
 
 Example
-{% highlight html %}
-<header>
-  <nav>
-    <ul class="navbar">
-      <li><a href="{{ site.baseurl }}/bloglist/">Blogs</a>
-      </li>
-      <li><a href="{{ site.baseurl }}/work/">Work</a>
-      </li>
-      <li><a href="{{ site.baseurl }}/index.html">About</a>
-      </li>
-      <li><a href="{{ site.baseurl }}/index.html" >Contact</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-{% endhighlight %}
+![]({{ site.baseurl}}/img/sitebaseurl.png)
 
 Now include this file in your main template so that every single page will automatically have this header. (I will get into how to include the file in a bit)
 
