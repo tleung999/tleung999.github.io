@@ -71,7 +71,7 @@ What is that "site.baseurl" syntax?  This is the Liquid syntax that you can use 
 
 ![]({{ site.baseurl }}/img/configyml.png)
 
-Notice that baseurl is "".  So now using site.baseurl will bring me back to the root.  [Click here](http://jekyllrb.com/docs/variables/) if you like to read up about Jekyll variables.
+Notice that baseurl is "".  So using site.baseurl will bring me back to the root.  [Click here](http://jekyllrb.com/docs/variables/) if you like to read up about Jekyll variables.
 
 * * *
 
@@ -82,7 +82,7 @@ This directory is where you place all your Jekyll templates.  CD to the _layout 
 
 Notice that there isn't a lot of HTML tags on the page.   But there are three include sytax. If you want to include a file from the _include directory such as the head.html file, simply type in "include head.html" between the curly brace and percentage signs.
 
-Doing this will include all the HTML markup from the head.html file.   The other 2 includes are self explanatory.
+Doing this will include all the HTML markup from the head.html file.   The other 2 includes does the same thing but with header and footer HTML.
 
 Now open up the post.html file.
 
