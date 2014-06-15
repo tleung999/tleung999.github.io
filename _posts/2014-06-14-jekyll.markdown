@@ -8,7 +8,7 @@ image: /img/jekyll.jpg
 snippet: "Though I havent mastered using Jekyll yet, I wanted to spend some time today to build a quick how to on setting and using Jekyll."
 ---
 
-Though I havent mastered using Jekyll yet, I wanted to spend some time today to build a quick how to on setting and using Jekyll.
+Though I havent mastered using Jekyll yet, I wanted to spend some time today to build a quick how to on setting up Jekyll and explain the directory structure.
 
 ####Prerequisites for using Jekyll
 
