@@ -46,15 +46,15 @@ ls -a
 
 <br />
 
-####The directory listing is the root of your new site using jekyll.   Let me explain what each directory and file is.
+####The directory listing is the root of your new site using Jekyll.   Let me explain what each directory and file is.
 
 #####.gitignore
-This file is used for git so you can exclude directories or files from getting pushed to GitHub.  If you look in the file now, it will shoe _site.   When you run the jekyll web service, it will compile your blog postings and dump everything into the _site directory.   GitHub doesnt need this directory since the site is assembled on the GitHub server automatically.   
+This file is used for git so you can exclude directories or files from getting pushed to GitHub.  If you look in the file, it will show _site.   When you run the Jekyll web service, it will compile your blog postings and dump everything into the _site directory.   GitHub doesnt need this directory since the site is assembled on the GitHub server automatically.   
 
 * * *
 
 #####_config.yml
-This is the configuration file.  You use this file to add customizations, such as what type of syntax highlighting to use, number of blogs to paginate per page, and may other options.  [Click here](http://jekyllrb.com/docs/configuration/) for more information about this page.
+This is the configuration file.  You use this file to add customizations, such as what type of syntax highlighting to use, number of blogs to paginate per page, and many other options.  [Click here](http://jekyllrb.com/docs/configuration/) for more information about this page.
 
 * * *
 
@@ -81,7 +81,7 @@ Example
 
 Now include this file in your main template so that every single page will automatically have this header. (I will get into how to include the file in a bit)
 
-What is that {{ site.baseurl}} syntax?  This is the Liquid syntax that you can use to generate you pages.   Reason I am using this is so that I can move back up to the root of the site and then point to the right html files for my links. The variable "site" is a reserved word for Jekyll.  When you call site, Jekyll will look in the _config.yml file and find the appropriate word that matches.   If you look in the _config.yml file, what do you see?
+What is that "site.baseurl" syntax?  This is the Liquid syntax that you can use to generate your pages.   Reason I am using this is so that I can move back up to the root of the site and then point to the right html files for my links. The variable "site" is a reserved word for Jekyll.  When you call site, Jekyll will look in the _config.yml file and find the appropriate word that matches.   If you look in the _config.yml file, what do you see?
 
 ![]({{ site.baseurl }}/img/configyml.png)
 
