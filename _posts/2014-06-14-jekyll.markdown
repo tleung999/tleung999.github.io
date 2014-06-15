@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title:  "Setting Up and Understanding Jekyll"
-date:   2014-06-13 13:00:00
+date:   2014-06-14 13:00:00
 categories: Technical
 name: Tony Leung
 image: /img/jekyll.jpg 
