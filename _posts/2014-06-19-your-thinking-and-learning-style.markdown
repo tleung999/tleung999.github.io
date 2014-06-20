@@ -5,9 +5,9 @@ date:   2014-06-19 12:00:00
 categories: Cultural
 name: Tony Leung
 image: /img/brain.jpg 
-snippet: "Turns out that I crave things to be in an orderly sequence and in a structured environment."
+snippet: "Turns out that I crave things to be in an orderly sequence and I work best in a structured environment."
 ---
-Before starting the Phase 0 of DBC, I took a personal thinking style quiz that determined that my [Gregorc Thinking Style](http://web.cortland.edu/andersmd/learning/gregorc.htm) was Concrete Sequential.  Turns out that I crave things to be in an orderly sequence and in a structured environment.   
+Before starting the Phase 0 of DBC, I took a personal thinking style quiz that determined that my [Gregorc Thinking Style](http://web.cortland.edu/andersmd/learning/gregorc.htm) was Concrete Sequential.  Turns out that I crave things to be in an orderly sequence and I work best in a structured environment.   
 
 Some of the struggles I had during Phase 0 was trying to lay out the groundwork on exactly what steps to take and how my pseudocode should be planned out.   Once I figured out the pseudcode, I didnt have too much problem figuring out how to piece all the parts together to complete the code.   I also felt that if some of the challenges such as the fibonacci sequence or the binary search did not provide me a sample of what the algorithm should look like I would be stuck.   I feel that in order to help balance my thinking process, I should take more chances to experiment, take the time to listen to others suggestions or solutions, and think outside the box.     
 
