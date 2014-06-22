@@ -1,0 +1,26 @@
+body
+{
+  background-image:url('../img/rossiandstoner.jpg');
+  background-color:#FFFFFF;
+}
+
+#backhome {
+  width: 200px;
+  height: 20px;
+  background-color: #808080;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#errortext {
+  margin-top: 100px;
+}
