@@ -1,7 +1,14 @@
 body
 {
-  background-image:url('../img/rossiandstoner.jpg');
   background-color:#FFFFFF;
+}
+
+html { 
+  background: url(../img/rossiandstoner.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #backhome {
